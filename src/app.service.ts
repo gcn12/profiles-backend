@@ -26,7 +26,7 @@ export class AppService {
   createBlog() {
     return this.prisma.tab.create({
       data: {
-        authorId: 'ff222ea9-befd-45fb-ba6f-8408560890b7',
+        authorId: '3ddc2e74-73d9-4c80-9082-a1dc6075aa3f',
         type: 'blog',
         content: JSON.stringify([
           { title: 'Living in Nepal', date: 'December 12, 2021' },
@@ -45,7 +45,7 @@ export class AppService {
   createExperience() {
     return this.prisma.tab.create({
       data: {
-        authorId: 'ff222ea9-befd-45fb-ba6f-8408560890b7',
+        authorId: '3ddc2e74-73d9-4c80-9082-a1dc6075aa3f',
         type: 'experience',
         content: JSON.stringify([
           {
@@ -97,7 +97,7 @@ export class AppService {
   createPortfolio() {
     return this.prisma.tab.create({
       data: {
-        authorId: 'ff222ea9-befd-45fb-ba6f-8408560890b7',
+        authorId: '3ddc2e74-73d9-4c80-9082-a1dc6075aa3f',
         type: 'portfolio',
         content: JSON.stringify([
           {
