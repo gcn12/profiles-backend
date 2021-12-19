@@ -28,3 +28,9 @@ model Tab {
   authorId String
   id       String @id @default(uuid())
 }
+
+model Content {
+  id      String @unique
+  content String
+  type    String
+}
