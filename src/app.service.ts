@@ -140,11 +140,10 @@ export class AppService {
     });
   }
 
-  async getTab(tab: string, authorId: string) {
+  async getTab(tab: string) {
     return this.prisma.tab.findFirst({
       where: {
         name: tab,
-        authorId,
       },
     });
   }
@@ -154,6 +153,6 @@ export class AppService {
   }
 
   async deleteData() {
-    return this.prisma.user.deleteMany();
+    return this.prisma.tab.deleteMany();
   }
 }

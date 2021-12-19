@@ -31,8 +31,8 @@ export class AppController {
   @Get('/tab/:tab')
   async getTab(@Param() params) {
     const tab = params.tab;
-    const authorId = params.authorId;
-    return this.appService.getTab(tab, authorId);
+    // const authorId = params.authorId;
+    return this.appService.getTab(tab);
   }
 
   @Post()

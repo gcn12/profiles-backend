@@ -26,4 +26,5 @@ model Tab {
   type     String
   content  String
   authorId String
+  id       String @id @default(uuid())
 }
