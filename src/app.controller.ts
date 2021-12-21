@@ -56,6 +56,13 @@ export class AppController {
     return this.appService.createPortfolio();
   }
 
+  @Post('/tabContent')
+  async tabContent(@Body() body) {
+    const { type, content, id } = body;
+    // console.log(JSON.stringify(content));
+    return this.appService.tabContent(type, content, id);
+  }
+
   @Delete()
   async deleteData() {
     return this.appService.deleteData();

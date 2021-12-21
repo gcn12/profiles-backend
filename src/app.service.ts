@@ -152,6 +152,16 @@ export class AppService {
     return this.prisma.user.findMany();
   }
 
+  async tabContent(type: string, content: string, id: string) {
+    return this.prisma.content.create({
+      data: {
+        type,
+        content,
+        id,
+      },
+    });
+  }
+
   async deleteData() {
     return this.prisma.tab.deleteMany();
   }
